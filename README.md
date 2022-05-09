@@ -1,4 +1,4 @@
 SC Starter 2022
 ===
 
-Description
+This is a custom theme using TailwindCSS and Gutenberg.
