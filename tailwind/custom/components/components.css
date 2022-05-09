@@ -44,7 +44,7 @@ $post-content-selector {
 
 /* Content width from the `theme.json` file */
 .entry-content > * {
-	@apply mx-auto max-w-content p-4 md:px-0;
+	@apply mx-auto max-w-content p-2 md:px-0;
 }
 
 /* Wide width from the `theme.json` file */
@@ -71,4 +71,35 @@ $post-content-selector {
 #secondary > section h4,
 #secondary > section h5 { 
 	@apply font-bold text-lg;
+}
+
+/* Single Posts */
+.nav-links {
+	@apply flex justify-between max-w-content mx-auto mb-4 p-3 border-t border-b border-zinc-200 md:px-0;
+}
+#commentform p {
+	@apply mb-4;
+}
+#comments h3 {
+	@apply font-bold text-lg;
+}
+
+/* Forms */
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+	@apply border border-zinc-400 w-full;
+}
+
+label {
+	@apply block font-bold;
+}
+
+input[type="checkbox"] + label {
+	@apply inline-block;
+}
+
+input[type="submit"] {
+	@apply bg-primary py-3 px-4 font-bold text-white;
 }

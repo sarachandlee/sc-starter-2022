@@ -1,3 +1,5 @@
+const { borderColor } = require("tailwindcss/defaultTheme");
+
 module.exports = {
 	theme: {
 		extend: {
@@ -13,8 +15,7 @@ module.exports = {
 				DEFAULT: {
 					css: [
 						{
-
-						},
+						}
 					],
 				},
 			} ),

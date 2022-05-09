@@ -10,5 +10,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
     <?php get_template_part( 'template-parts/content/content', 'page-header' ); ?>
+
+    <div class="container mx-auto py-3 entry-content">
+
+        <?php the_content( ); ?>
+
+    </div>
+
 </article>

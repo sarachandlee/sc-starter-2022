@@ -22,11 +22,12 @@ get_header();
 			<?php 
 				the_post_navigation(
 					array(
-						'prev_text' => '<div class="bg-slate-600">' . esc_html__( 'Previous:', 'sc-starter-2022' ) . '<span>%title</span></div>',
-						'next_text' => '<div class="bg-slate-600">' . esc_html__( 'Next:', 'sc-starter-2022' ) . '<span>%title</span></div> ',
+						'prev_text' => '<span>' . esc_html__( 'Previous:', 'sc-starter-2022' ) . '</span> <span>%title</span>',
+						'next_text' => '<span>' . esc_html__( 'Next:', 'sc-starter-2022' ) . '</span> <span>%title</span> ',
 					)
 				);
 			?>
+		<div class="max-w-content mx-auto">
 
 		<?php
 
@@ -37,6 +38,8 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+
+		</div>
 
 	</main><!-- #main -->
 
