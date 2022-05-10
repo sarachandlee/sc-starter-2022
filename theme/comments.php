@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2>
+		<h2 class="font-bold text-lg">
 			<?php
 			$sc_starter_2022_comment_count = get_comments_number();
 			if ( '1' === $sc_starter_2022_comment_count ) {
@@ -48,7 +48,7 @@ if ( post_password_required() ) {
 
 		<?php the_comments_navigation(); ?>
 
-		<ol>
+		<ol class="my-4">
 			<?php
 			wp_list_comments(
 				array(

@@ -11,7 +11,7 @@ if( is_front_page() ) {
     return false;
 }
 ?>
-<header>
+<header class="mb-5">
     <?php
         $bg = '';
         $featured_img = ( is_singular(  ) ) ? get_the_post_thumbnail_url() : '';

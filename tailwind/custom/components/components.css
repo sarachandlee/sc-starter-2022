@@ -44,7 +44,7 @@ $post-content-selector {
 
 /* Content width from the `theme.json` file */
 .entry-content > * {
-	@apply mx-auto max-w-content p-2 md:px-0;
+	@apply mx-auto max-w-content px-3 md:p-0;
 }
 
 /* Wide width from the `theme.json` file */
@@ -73,16 +73,37 @@ $post-content-selector {
 	@apply font-bold text-lg;
 }
 
-/* Single Posts */
+/**
+ * Nav links on single posts
+ *
+ */
 .nav-links {
 	@apply flex justify-between max-w-content mx-auto mb-4 p-3 border-t border-b border-zinc-200 md:px-0;
 }
+
+/**
+ * Comments on single posts
+ *
+ */
 #commentform p {
 	@apply mb-4;
 }
 #comments h3 {
 	@apply font-bold text-lg;
 }
+#comments .comment-author img {
+	@apply float-left mr-2;
+}
+#comments .comment-metadata {
+	@apply italic text-sm text-zinc-500;
+}
+#comments .comment-content {
+	@apply bg-zinc-100 p-4 my-3;
+}
+#comments .reply a {
+	@apply p-2 border border-primary my-3;
+}
+
 
 /* Forms */
 textarea,
